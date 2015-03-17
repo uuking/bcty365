@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>99pursey</title>
+	<link href="media/css/bootstrap.min.css" rel="stylesheet">
+	<link href="media/css/base.css" rel="stylesheet">
+	</head>
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div id="top">
+					<div id="topBar">
+						<div class="userPanel">
+							<ul>
+								<li>
+									<a href="release_content.php">我要发布</a>
+								</li>
+								<li>
+									<a href="#">设为首页</a>
+								</li>
+								<li>
+									<a href="#">加入收藏</a>
+								</li>
+								<li>
+									<a href="#">联系我们</a>
+								</li>
+							</ul>
+						</div>
+						<div class="welcome">欢迎光临洋洋创意网络工作室网站！</div>
+					</div>
+
+				</div>
+
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.php">导航</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+						<{foreach from=$typelist key=k item=v}>
+							<li>
+								<a href="index.php?type=<{$v}>"><{$v}></a>
+							</li>
+							<{/foreach}>
+						</ul>
+						
+					</div>
+
+				</nav>

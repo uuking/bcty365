@@ -1,0 +1,553 @@
+
+ol, ul, li {
+    list-style: outside none none;
+    padding: 0;
+}
+h3 {
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+#wrap {
+}
+.box {
+}
+.box .hd {
+    line-height: 30px;
+}
+.box .hd h3, .box .hd span {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.box .hd .more {
+    color: #666;
+    float: right;
+    margin-right: 5px;
+}
+.box .bd {
+    padding: 9px;
+}
+.sideBox {
+}
+.sideBox .hd {
+    line-height: 30px;
+}
+.sideBox .hd h3, .sideBox .hd span {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sideBox .hd .more {
+    float: right;
+    margin-right: 5px;
+}
+.sideBox .bd {
+    padding: 9px;
+}
+#top {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 10px;
+}
+#topBar {
+    overflow: hidden;
+}
+#topBar h1 {
+    float: left;
+}
+#topBar .userPanel {
+    float: right;
+}
+#topBar .userPanel li {
+    display: inline-block;
+    padding: 0 5px;
+}
+#header {
+    height: 70px;
+}
+#header .logo {
+    color: #06c;
+    font-size: 24px;
+    height: 70px;
+    line-height: 70px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+#header .topAD {
+    color: #08a;
+    float: right;
+    font-size: 14px;
+    height: 70px;
+    line-height: 70px;
+}
+#nav {
+    background: none repeat scroll 0 0 #09c;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.mainNav {
+    position: relative;
+    z-index: 9;
+}
+.mainNav * {
+    vertical-align: top;
+}
+.mainNav ul {
+    background: none repeat scroll 0 0 #08c;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+.mainNav li {
+    position: relative;
+}
+.mainNav a {
+    display: block;
+}
+.mainNav li.spe {
+    color: #fff;
+    display: inline-block;
+}
+.mainNav .li1 {
+    display: inline-block;
+    margin: 0 10px;
+}
+.mainNav .h1 {
+    display: inline-block;
+}
+.mainNav .ul1 {
+    line-height: 20px;
+}
+.mainNav .li1 .a1 {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.mainNav .hasUl1 .a1 {
+    background: url("../images/share/arrowD.gif") no-repeat scroll right 14px rgba(0, 0, 0, 0);
+    padding: 0 16px 0 10px;
+}
+.mainNav .on1 .a1 {
+    background-color: #08c;
+    color: #fff;
+}
+.mainNav .li1 a {
+    padding: 5px 0;
+}
+.mainNav .li2 ul {
+    left: 100px;
+    top: 0;
+}
+.mainNav .li2 a {
+    background-color: #08c;
+    border-bottom: 1px dotted #09c;
+    color: #fff;
+    padding-left: 10px;
+}
+.mainNav .hasUl2 .a2 {
+    background: url("../images/share/arrowR.gif") no-repeat scroll right 12px rgba(0, 0, 0, 0);
+    padding-right: 10px;
+}
+.mainNav .on2 .a2 {
+    background-color: #09c;
+}
+.mainNav .li3 a {
+    background-color: #09c;
+    border-bottom: 1px dotted #0ac;
+    color: #fff;
+}
+.mainNav .hasUl3 .a3 {
+    background: url("../images/share/arrowR.gif") no-repeat scroll right 12px #09c;
+    padding-right: 10px;
+}
+.mainNav .on3 .a3 {
+    background-color: #0ac;
+}
+.mainNav .li4 a {
+    background-color: #0ac;
+    border-bottom: 1px dotted #0bc;
+}
+.mainNav .on4 .a4 {
+    background-color: #0bc;
+}
+.banner {
+    height: 220px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .bd {
+    position: relative;
+    z-index: 0;
+}
+.banner .bd ul {
+    width: 100% !important;
+}
+.banner .bd li {
+    height: 220px;
+    width: 100% !important;
+}
+.banner .bd li a {
+    display: block;
+    height: 220px;
+    margin: 0 auto;
+    width: 1000px;
+}
+.banner .bd .txt {
+    font: 18px/30px "Microsoft YaHei";
+    left: 22px;
+    position: absolute;
+    top: 100px;
+    width: 415px;
+}
+.banner .bd .btn {
+    color: #ff0;
+    content: ">";
+    display: block;
+    font-size: 12px;
+    height: 31px;
+    line-height: 31px;
+    margin-top: 8px;
+    padding-right: 10px;
+    text-align: center;
+    width: 72px;
+}
+.banner .hd {
+    bottom: 0;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+.banner .hd ul li {
+    background: none repeat scroll 0 0 #333;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    line-height: 9999px;
+    margin: 4px;
+    opacity: 0.4;
+    overflow: hidden;
+    width: 10px;
+}
+.banner .hd ul .on {
+    background: none repeat scroll 0 0 #f30;
+    opacity: 1;
+}
+#content {
+    overflow: hidden;
+}
+#content .mainContent {
+    float: left;
+    width: 750px;
+}
+#content .side {
+    float: right;
+    width: 240px;
+}
+.focusBox {
+    float: left;
+    height: 240px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 320px;
+}
+.focusBox .hd {
+    bottom: 5px;
+    padding-top: 0 !important;
+    position: absolute;
+    right: 5px;
+    z-index: 3;
+}
+.focusBox .hd ul {
+    float: left;
+    overflow: hidden;
+}
+.focusBox .hd ul li {
+    background: none repeat scroll 0 0 #000;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 1px;
+    opacity: 0.6;
+    text-align: center;
+    width: 16px;
+}
+.focusBox .hd ul li.on {
+    background: none repeat scroll 0 0 #f00;
+    font-weight: bold;
+    opacity: 1;
+}
+.focusBox .bd {
+    background-color: #fff;
+    border: medium none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+.focusBox .bd .pic img {
+    height: 240px;
+    width: 320px;
+}
+.focusBox .bd .con {
+    bottom: 0;
+    height: 24px;
+    left: 0;
+    line-height: 24px;
+    position: absolute;
+    width: 100%;
+}
+.focusBox .bd .con .title {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+.focusBox .bd .con .title a {
+    color: #fff;
+    padding-left: 10px;
+}
+.focusBox .bd .bg {
+    background: none repeat scroll 0 0 #333;
+    bottom: 0;
+    height: 24px;
+    left: 0;
+    line-height: 24px;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+#newsGroup {
+    background: none repeat scroll 0 0 #f5f5f5;
+    float: right;
+    height: 220px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: left;
+    width: 400px;
+}
+#newsGroup .hd {
+    border-bottom: 2px solid #09c;
+    height: 28px;
+    line-height: 28px;
+}
+#newsGroup .hd ul {
+    overflow: hidden;
+}
+#newsGroup .hd ul li {
+    float: left;
+}
+#newsGroup .hd ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+}
+#newsGroup .hd ul li.on a {
+    background: none repeat scroll 0 0 #09c;
+    color: #fff;
+    font-weight: bold;
+}
+#newsGroup .bd {
+    padding: 10px 0 0;
+}
+#AD1 {
+    clear: both;
+    height: 80px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#AD1 .hd {
+    bottom: 5px;
+    position: absolute;
+    right: 5px;
+    z-index: 1;
+}
+#AD1 .hd ul {
+    float: left;
+    overflow: hidden;
+}
+#AD1 .hd ul li {
+    background: none repeat scroll 0 0 #fff;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 2px;
+    opacity: 0.6;
+    text-align: center;
+    width: 16px;
+}
+#AD1 .hd ul li.on {
+    background: none repeat scroll 0 0 #f60;
+    color: #fff;
+    font-weight: bold;
+    opacity: 1;
+}
+#AD1 .bd {
+    position: relative;
+    z-index: 0;
+}
+#AD1 .bd img {
+    height: 80px;
+    width: 750px;
+}
+#cpzs {
+    background: none repeat scroll 0 0 #f5f5f5;
+    height: 167px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+}
+#cpzs .prev, #cpzs .next {
+    background: url("../images/icons.png") no-repeat scroll -40px 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    overflow: hidden;
+    position: absolute;
+    top: 85px;
+    width: 18px;
+}
+#cpzs .prev {
+    left: 10px;
+}
+#cpzs .next {
+    background-position: -120px 0;
+    right: 10px;
+}
+#cpzs .prevStop {
+    background-position: 0 0;
+}
+#cpzs .nextStop {
+    background-position: -80px 0;
+}
+#cpzs .hd {
+    border-bottom: 2px solid #09c;
+}
+#cpzs .hd h3 {
+    background: none repeat scroll 0 0 #09c;
+    display: inline-block;
+    padding: 0 15px;
+}
+#cpzs .hd h3 a {
+    color: #fff;
+}
+#cpzs .bd {
+    padding: 10px 30px 0;
+}
+#cpzs .bd li {
+    float: left;
+    margin: 0 4px;
+    overflow: hidden;
+    width: 126px;
+}
+#cpzs .bd li img {
+    border: 1px solid #ddd;
+    height: 90px;
+    padding: 2px;
+    width: 120px;
+}
+#tzgg {
+    background: none repeat scroll 0 0 #f5f5f5;
+    height: 220px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+#tzgg .hd {
+    background: none repeat scroll 0 0 #f60;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+#tzgg .hd .more {
+    color: #fff;
+}
+#tzgg .hd h3 a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+#tzgg .bd {
+    padding: 3px 0 0;
+}
+#tzgg .bd li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+#tzgg .bd li span {
+    color: #999;
+    margin-right: 5px;
+}
+#caseTab {
+    background: none repeat scroll 0 0 #f5f5f5;
+    height: 257px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+#caseTab .hd {
+    background: url("../images/icons.png") no-repeat scroll 200px -37px #09c;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+#caseTab .hd .more {
+    color: #fff;
+}
+#caseTab .hd h3 span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+#caseTab .on {
+    background: url("../images/icons.png") no-repeat scroll 200px -77px #f60;
+}
+#caseTab .bd {
+    padding: 10px 0;
+}
+#caseTab .bd li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+#caseTab .bd li span {
+    color: #999;
+    margin-right: 5px;
+}
+#footer {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    text-align: center;
+}
+#footer .footerNav a {
+    padding: 0 5px;
+}
+#footer .copyRight {
+    font-family: Arial;
+}
+.panel-heading{
+    padding: 0px;
+}

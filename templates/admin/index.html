@@ -1,0 +1,187 @@
+<{include file="header.html"}>
+<div class="row clearfix">
+	<div class="col-sm-3 col-md-3 column">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">后台功能区</h3>
+			</div>
+		</div>
+
+		<form role="form">
+			<h4>免费信息</h4>
+			<div class="checkbox">
+				<label>
+					<input type="radio" name='mf' value='1' />			
+					已审核
+				</label>
+				<label>
+					<input type="radio" name='mf' value='0' />			
+					未审核
+				</label>
+				<label>
+					<input type="radio" name='mf' value='全部' checked='checked' />			
+					全部
+				</label>
+			</div>
+			<select name="type" id="type" class='checkbox'>
+				<option value="全部" checked='checked'>-全部-</option>
+				<{foreach from=$typelist key=k item=v}>
+					<option value="<{$v}>">-<{$v}>-</option>
+				<{/foreach}>
+			</select>
+			<button name='lb' value='mftj' type="submit" class="btn btn-default">检索</button>
+		</form>
+		<form role="form">
+			<h4>收费信息</h4>
+			<div class="checkbox">
+				<label>
+					<input type="radio" name='fufei' value=1 />			
+					已付费
+				</label>
+				<label>
+					<input type="radio" name='fufei' value=0 />			
+					未付费
+				</label>
+				<label>
+					<input type="radio" name='fufei' checked='checked' value='全部' />			
+					全部
+				</label>
+			</div>
+			<select name="type" id="type" class='checkbox'>
+				<option value="全部" checked='checked'>-全部-</option>
+				<{foreach from=$typelist key=k item=v}>
+					<option value="<{$v}>">-<{$v}>-</option>
+				<{/foreach}>
+			</select>
+			<button name='lb' value='sftj' type="submit" class="btn btn-default">检索</button>
+		</form>
+		<form role="form">
+			<h4>企业广告</h4>
+			<div class="checkbox">
+				<label>
+					<input type="radio" name='tuijian' value = 1 />			
+					已推荐
+				</label>
+				<label>
+					<input type="radio" name='tuijian' value = 0 />			
+					未推荐
+				</label>
+				<label>
+					<input type="radio" name='tuijian' checked='checked' value='全部' />			
+					全部
+				</label>
+			</div>
+			<button type="submit" name='lb' value='qygg' class="btn btn-default">检索</button>
+		</form>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><a href="">发布付费信息</a></h3>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><a href="">发布企业广告</a></h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9 col-md-9 column">
+					<ul class="breadcrumb">
+						<li>
+							<{$leibie}>
+						</li>
+						<li>
+							<{$type}>
+						</li>
+						<li class="active"><{$mf}></li>
+					</ul>
+					<{if $info_list==''}>
+					没有相关信息
+					<{else}>
+					<{if $leibie=='免费信息'}>
+					<table class="table">
+						<thead>
+							<tr>
+								<th style='width: 12%'>信息标题</th>
+								<th style='width: 37%'>信息内容</th>
+								<th style='width: 8%'>联系人</th>
+								<th style='width: 14%'>联系电话</th>
+								<th style='width: 10%'>发布时间</th>
+								<th style='width: 9%'>审核状态</th>
+								<th style='width: 9%'>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						<{foreach from=$info_list item=v key=k}>
+							<tr>
+								<td><{$v.title}></td>
+								<td><{$v.content}></td>
+								<td><{$v.linkman}></td>
+								<td><{$v.tel}></td>
+								<td><{$v.edate}></td>
+								<td><{if $v.checkstate==1}>已审核<{else}>未审核<{/if}></td>
+								<td><a href="edit.php?lb=mf&cz=xg&id=<{$v.id}>">修改</a>/<a href="edit.php?lb=mf&cz=sc&id=<{$v.id}>">删除</a></td>
+							</tr>
+							<{/foreach}>
+							
+						</tbody>
+					</table>
+					<{$page_show}>
+					<{elseif $leibie=='收费信息'}>
+					<table class="table">
+						<thead>
+							<tr>
+								<th style='width: 12%'>信息标题</th>
+								<th style='width: 37%'>信息内容</th>
+								<th style='width: 8%'>联系人</th>
+								<th style='width: 14%'>联系电话</th>
+								<th style='width: 10%'>发布时间</th>
+								<th style='width: 9%'>审核状态</th>
+								<th style='width: 9%'>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						<{foreach from=$info_list item=v key=k}>
+							<tr>
+								<td><{$v.title}></td>
+								<td><{$v.content}></td>
+								<td><{$v.linkman}></td>
+								<td><{$v.tel}></td>
+								<td><{$v.sdate}></td>
+								<td><{if $v.checkstate==1}>已付费<{else}>未付费<{/if}></td>
+								<td><a href="edit.php?lb=sf&cz=xg&id=<{$v.id}>">修改</a>/<a href="edit.php?lb=sf&cz=sc&id=<{$v.id}>">删除</a></td>
+							</tr>
+							<{/foreach}>
+							
+						</tbody>
+					</table>
+					<{$page_show}>
+					<{elseif $leibie=='企业广告'}>
+					<table class="table">
+						<thead>
+							<tr>
+								<th style='width: 20%'>信息标题</th>
+								<th style='width: 50%'>信息内容</th>
+								<th style='width: 10%'>发布时间</th>
+								<th style='width: 10%'>推荐状态</th>
+								<th style='width: 10%'>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						<{foreach from=$info_list item=v key=k}>
+							<tr>
+								<td><{$v.title}></td>
+								<td><{$v.content}></td>
+								<td><{$v.fdate}></td>
+								<td><{if $v.flag==1}>已推荐<{else}>未推荐<{/if}></td>
+								<td><a href="edit.php?lb=tj&cz=xg&id=<{$v.id}>">修改</a>/<a href="edit.php?lb=tj&cz=sc&id=<{$v.id}>">删除</a></td>
+							</tr>
+							<{/foreach}>
+							
+						</tbody>
+					</table>
+					<{$page_show}>
+					<{/if}>
+					<{/if}>
+				</div>
+			</div>
+<{include file='footer.html'}>

@@ -1,0 +1,48 @@
+<{include file="header.html"}>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h3><{$type}></h3>
+		</div>
+	</div>
+</div>
+<div class="row clearfix">
+	<div class="col-md-8 column">
+		<{if $leaguer_list != ''}>
+		<div class="list-group">
+			<a href="javascript:void(0)" class="list-group-item active">收费信息</a>
+			<{foreach from=$leaguer_list key=k item=v}>
+			<div class="list-group-item">
+				<h4 class="list-group-item-heading">[<{$v.type}>]<{$v.title}></h4>
+				<p class="list-group-item-text"><{$v.content}></p>
+				<p class="list-group-item-text">联系人：<{$v.linkman}> 联系电话：<{$v.tel}></p>
+			</div>
+			<{/foreach}>
+		</div>
+		<{else}>
+		<div class="list-group">
+			<a href="javascript:void(0)" class="list-group-item active">无收费信息</a>
+		</div>
+		<{/if}>
+		<{if $info_list != ''}>
+		<div class="list-group">
+			<a href="javascript:void(0)" class="list-group-item active">免费信息</a>
+			<{foreach from=$info_list key=k item=v}>
+			<div class="list-group-item">
+				<h4 class="list-group-item-heading">[<{$v.type}>]<{$v.title}></h4>
+				<p class="list-group-item-text"><{$v.content}></p>
+				<p class="list-group-item-text">联系人：<{$v.linkman}> 联系电话：<{$v.tel}></p>
+			</div>
+			<{/foreach}>
+		</div>
+		<{$page_show}>
+		<{else}>
+		<div class="list-group">
+			<a href="javascript:void(0)" class="list-group-item active">无免费信息</a>
+
+			</div>
+		<{/if}>
+	</div>
+	<{include file='right.html'}>
+</div>
+<{include file='footer.html'}>
