@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 11:33:56
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 16:09:19
          compiled from "templates\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:275455507a03b57f908-86976362%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '94824e82ff23485806db5d4320cc205805b225ee' => 
     array (
       0 => 'templates\\header.html',
-      1 => 1426563235,
+      1 => 1426579754,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>99pursey</title>
+	<title>bcty网上社区</title>
 	<link href="media/css/bootstrap.min.css" rel="stylesheet">
 	<link href="media/css/base.css" rel="stylesheet">
 	</head>
@@ -112,23 +112,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<div id="top">
 				<div id="topBar">
 					<div class="userPanel">
-						<ul>
-							<li>
-								<a href="#">手机版</a>
-							</li>
-							<li>
-								<a href="#">设为首页</a>
-							</li>
-							<li>
-								<a href="#">加入收藏</a>
-							</li>
-							<li>
-								<a href="#">联系我们</a>
-							</li>
-						</ul>
-					</div>
-					<div class="welcome">
-						欢迎光临洋洋创意网络工作室网站！
+						<form action="test.php" method="post">
+							<ul>
+								<li>用户名：
+									<input type="text">
+								</li>
+								<li>
+								密码：
+									<input type="text">
+								</li>
+								<li>
+								验证码：
+									<input type="text">
+								</li>
+								<li>
+									<img src="libs/captcha.php" alt="" onclick="javascript:this.src='libs/captcha.php?time='+Math.random();">
+								</li>
+								<li>
+									<button class="btn btn-default" type="submit">登陆</button>
+								</li>
+								<li><a href="">注册</a></li>
+								<li><a href="">找回密码</a></li>
+								<li>今天是：2015-03-17</li>
+							</ul>
+						</form>
 					</div>
 				</div>
 				

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 11:34:53
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 11:43:25
          compiled from "templates\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:32965507a03b49cfc2-79216659%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '43a9f7e448570b938b00dc7c836f56a0b0228bf4' => 
     array (
       0 => 'templates\\index.html',
-      1 => 1426563292,
+      1 => 1426563803,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_5507a03b550af9_86174771')) {function content_5507a03b550af9_86174771($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 <div class="row clearfix">
-	<div class="col-sm-3 col-md-3 column">
+	<div class="col-sm-4 col-md-4 column">
 		<div class="list-group">
 			 <a href="#" class="list-group-item active">首页</a>
 			<div class="list-group-item">
@@ -58,7 +58,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</div> <a class="list-group-item active"><span class="badge">14</span>案例展示</a>
 		</div>
 	</div>
-	<div class="col-sm-9 col-md-9 column">
+	<div class="col-sm-8 col-md-8 column">
 		<div class="media">
 			 <a href="#" class="pull-left"><img src="skin/img/64.jpg" class="media-object" alt='' /></a>
 			<div class="media-body">
