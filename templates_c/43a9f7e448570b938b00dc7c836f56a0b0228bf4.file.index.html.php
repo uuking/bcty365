@@ -1,4 +1,26 @@
-<{include file="header.html"}>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 11:34:53
+         compiled from "templates\index.html" */ ?>
+<?php /*%%SmartyHeaderCode:32965507a03b49cfc2-79216659%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '43a9f7e448570b938b00dc7c836f56a0b0228bf4' => 
+    array (
+      0 => 'templates\\index.html',
+      1 => 1426563292,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '32965507a03b49cfc2-79216659',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5507a03b550af9_86174771',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5507a03b550af9_86174771')) {function content_5507a03b550af9_86174771($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+
 <div class="row clearfix">
 	<div class="col-sm-3 col-md-3 column">
 		<div class="list-group">
@@ -130,4 +152,5 @@
 		</div>
 	</div>
 </div>
-<{include file='footer.html'}>
+<?php echo $_smarty_tpl->getSubTemplate ('footer.html', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php }} ?>
