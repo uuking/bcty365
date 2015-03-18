@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-18 16:06:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-18 17:25:47
          compiled from "templates\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:1195055092f54880267-75010225%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '94824e82ff23485806db5d4320cc205805b225ee' => 
     array (
       0 => 'templates\\header.html',
-      1 => 1426666011,
+      1 => 1426670746,
       2 => 'file',
     ),
   ),
@@ -41,74 +41,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="navbar-header">
-					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">切换导航</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">导航</a>
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">首页</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">首页</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">链接</a>
+						<li>
+							<a href="#">技术支持</a>
 						</li>
 						<li>
-							<a href="#">链接</a>
+							<a href="#">在线订购</a>
 						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">列表一</a>
-								</li>
-								<li>
-									<a href="#">列表二</a>
-								</li>
-								<li>
-									<a href="#">列表三</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">更多列表</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">更多列表</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input class="form-control" type="text" />
-						</div> <button type="submit" class="btn btn-default">搜索</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#">链接</a>
+							<a href="#">升级下载</a>
 						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">列表一</a>
-								</li>
-								<li>
-									<a href="#">列表二</a>
-								</li>
-								<li>
-									<a href="#">列表三</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">更多列表</a>
-								</li>
-								<li class="divider">
-								</li>
-								<li>
-									<a href="#">更多列表</a>
-								</li>
-							</ul>
+						<li>
+							<a href="#">社区论坛</a>
+						</li>
+						<li>
+							<a href="#">购买须知</a>
+						</li>
+						<li>
+							<a href="#">软件下载</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
 						</li>
 					</ul>
 				</div>
