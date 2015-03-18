@@ -1,25 +1,31 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-17 18:02:06
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-18 16:06:52
          compiled from "templates\header.html" */ ?>
-<?php /*%%SmartyHeaderCode:13815507e3f7a68a18-50311111%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1195055092f54880267-75010225%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '94824e82ff23485806db5d4320cc205805b225ee' => 
     array (
       0 => 'templates\\header.html',
-      1 => 1426586525,
+      1 => 1426666011,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13815507e3f7a68a18-50311111',
+  'nocache_hash' => '1195055092f54880267-75010225',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5507e3f7a70715_08551299',
+  'unifunc' => 'content_55092f5488fc68_00231009',
+  'variables' => 
+  array (
+    'usernc' => 0,
+    'now' => 0,
+    'username' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5507e3f7a70715_08551299')) {function content_5507e3f7a70715_08551299($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55092f5488fc68_00231009')) {function content_55092f5488fc68_00231009($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 	<meta charset="utf-8">
@@ -112,41 +118,47 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<div id="top">
 				<div id="topBar">
 					<div class="userPanel">
-						<form action="test.php" method="post">
+					<?php if (!isset($_smarty_tpl->tpl_vars['usernc']->value)) {?>
+						<form id="loginform">
 							<ul>
 								<li>用户名：
-									<input type="text" name="usernc">
+									<input type="text" placeholder="用户名" name="usernc">
 								</li>
 								<li>
 								密码：
-									<input type="password" name="userpwd">
+									<input type="password" placeholder="密码" name="userpwd">
 								</li>
 								<li>
 								验证码：
-									<input type="text" name="xym">
+									<input type="text" placeholder="验证码" name="xym">
 								</li>
 								<li>
 									<img src="libs/captcha.php" alt="" onclick="javascript:this.src='libs/captcha.php?time='+Math.random();">
 								</li>
 								<li>
-									<button class="btn btn-default" type="submit">登陆</button>
+									<button id="login" class="btn btn-default" type="button">登陆</button>
 								</li>
 								<li><a href="">注册</a></li>
 								<li><a href="">找回密码</a></li>
-								<li>今天是：2015-03-17</li>
+								<li>今天是：<?php echo $_smarty_tpl->tpl_vars['now']->value;?>
+</li>
 							</ul>
 						</form>
-<!-- 						<ul>
+						<?php } else { ?>
+						<ul>
 							<li>用户名：
-								刘xx
+								<?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+
 							</li>
 							<li>
-							<a href="edituserinfo.php" class="a4">更改注册信息</a>
+							<a href="" class="a4">更改注册信息</a>
 							</li>
 
-							<li><a href="logout.php" class="a4">退出登录</a></li>
-							<li>今天是：2015-03-17</li>
-						</ul> -->
+							<li><a href="user.php?action=logout" class="a4">退出登录</a></li>
+							<li>今天是：<?php echo $_smarty_tpl->tpl_vars['now']->value;?>
+</li>
+						</ul>
+						<?php }?>
 					</div>
 				</div>
 				

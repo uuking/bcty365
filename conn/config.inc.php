@@ -12,7 +12,7 @@
 	$smarty->right_delimiter = "}>"; //右定界符 
 
 	$connect = mysqli_connect("localhost", "root", "root") or die("链接数据库失败！");
-	mysqli_select_db($connect,"db_pursey" ) or die("选择数据库失败");
+	mysqli_select_db($connect,"db_bcty365" ) or die("选择数据库失败");
 	mysqli_query($connect,"SET NAMES 'utf8'");
 	
 	// 打印函数
