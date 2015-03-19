@@ -8,9 +8,6 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])&&strtolower($_SERVER['HTTP_X_REQUEST
 	foreach ($_POST as $key => $value) {
 		$post[$key]=addslashes($value);
 	}
-
-	$post['userpwd'] = md5($post['userpwd']);
-	
 	if($post['usernc']==''){
 		echo "用户名不能为空！";
 		exit;
@@ -26,10 +23,10 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])&&strtolower($_SERVER['HTTP_X_REQUEST
 		echo '验证码错误！';
 		exit;
 	}
-
+	
+	$post['userpwd'] = md5($post['userpwd']);
 	$sql = mysqli_query($connect,"select * from tb_user where usernc='{$post['usernc']}' and pwd='{$post['userpwd']}'");
-	if($sql){
-		$row = mysqli_fetch_assoc($sql);
+	if($row = mysqli_fetch_assoc($sql)){
 		mysqli_query($connect,"update tb_user set logintimes=logintimes+1,ip='$ip',lastlogintime='$lastlogintime' where usernc='{$post['usernc']}' and usertype=1");
 		$_SESSION['usernc']=$post['usernc'];
 		$_SESSION['username'] = $row['truename'];

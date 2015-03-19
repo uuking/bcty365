@@ -14,7 +14,11 @@
 	$connect = mysqli_connect("localhost", "root", "root") or die("链接数据库失败！");
 	mysqli_select_db($connect,"db_bcty365" ) or die("选择数据库失败");
 	mysqli_query($connect,"SET NAMES 'utf8'");
-	
+	if(isset($_SESSION['usernc'])){
+		$smarty->assign('usernc','islogin');
+		$smarty->assign('username',$_SESSION['username']);
+	}
+	$smarty->assign('now',date('Y-m-d'));
 	// 打印函数
 	function p($arr){
 		echo '<pre>';

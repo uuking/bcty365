@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-18 17:25:47
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-19 16:31:15
          compiled from "templates\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:1195055092f54880267-75010225%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '94824e82ff23485806db5d4320cc205805b225ee' => 
     array (
       0 => 'templates\\header.html',
-      1 => 1426670746,
+      1 => 1426753870,
       2 => 'file',
     ),
   ),
@@ -95,7 +95,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								<li>
 									<button id="login" class="btn btn-default" type="button">登陆</button>
 								</li>
-								<li><a href="">注册</a></li>
+								<li><a href="register.php">注册</a></li>
 								<li><a href="">找回密码</a></li>
 								<li>今天是：<?php echo $_smarty_tpl->tpl_vars['now']->value;?>
 </li>
