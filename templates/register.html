@@ -1,83 +1,110 @@
 <{include file="header.html"}>
-<div class="row clearfix">
-	<div class="col-md-12 column">
-		<ul class="breadcrumb">
-			<li>
-				<a href="#">首页</a>
-			</li>
-			<li class="active">注册</li>
-		</ul>
-		<form class="form-horizontal">
-			<div class="form-group">
-				<label for="inputEmail3" class="col-sm-3 control-label">用户名：</label>
-				<div class="col-sm-5">
-					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li class="active">注册</li>
+			</ul>
+			<legend class="text-center">请填写注册信息(*为必填项)</legend>
+			<form class="form-horizontal" id="register" method="post" action="register.php">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*用户名：</label>
+					<div class="col-sm-5">
+						<input type="text" name="username" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">密码：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*密码：</label>
+					<div class="col-sm-5">
+						<input type="password" id="pwd" name="pwd" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">昵称：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*确认密码：</label>
+					<div class="col-sm-5">
+						<input type="password" name="repwd" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">性别：</label>
-				<div class="col-sm-5">
-					<input type="radio" class="" id="inputPassword3" placeholder="Password">男
-					<input type="radio" class="" id="inputPassword3" placeholder="Password">女 
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*昵称：</label>
+					<div class="col-sm-5">
+						<input type="text" name="nickname" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">邮箱地址：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label  class="col-sm-3 control-label">性别：</label>
+					<div class="col-sm-5">
+						<input type="radio" name="sex" checked="checked" value="男">
+						男
+						<input type="radio" name="sex" value="女">女</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">联系电话：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*邮箱地址：</label>
+					<div class="col-sm-5">
+						<input type="text" name="email" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">邮编：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">联系电话：</label>
+					<div class="col-sm-5">
+						<input type="text" name="tel" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">qq号码：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">邮编：</label>
+					<div class="col-sm-5">
+						<input type="text" name="youbian" class="form-control"></div>
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="inputPassword3" class="col-sm-3 control-label">家庭住址：</label>
-				<div class="col-sm-5">
-					<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<div class="form-group">
+					<label class="col-sm-3 control-label">qq号码：</label>
+					<div class="col-sm-5">
+						<input type="text" name="qqnumber" class="form-control"></div>
 				</div>
-			</div>
-			
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-5">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox">Remember me</label>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">家庭住址：</label>
+					<div class="col-sm-5">
+						<input type="text" name="address" class="form-control"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">头像：</label>
+					<div class="col-sm-1">
+						<select id="headimg" name="headimg">
+							<option selected="selected" value="1.gif">1.gif</option>
+							<option value="2.gif">2.gif</option>
+							<option value="3.gif">3.gif</option>
+							<option value="4.gif">4.gif</option>
+							<option value="5.gif">5.gif</option>
+							<option value="6.gif">6.gif</option>
+							<option value="7.gif">7.gif</option>
+							<option value="8.gif">8.gif</option>
+							<option value="9.gif">9.gif</option>
+							<option value="10.gif">10.gif</option>
+							<option value="11.gif">11.gif</option>
+						</select>
+					</div>
+					<img src="media/image/1.gif" class="headimg"></div>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*密保问题：</label>
+					<div class="col-sm-5">
+						<select name="question">
+							<option>我最喜欢的休闲运动是什么？</option>
+							<option>我最喜欢的地方是什么？</option>
+							<option>我最喜欢的食物是什么？</option>
+							<option>我最喜欢的歌曲是什么？</option>
+						</select>
 					</div>
 				</div>
-			</div>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-5">
-					<button type="submit" class="btn btn-default">Sign in</button>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*密保答案：</label>
+					<div class="col-sm-5">
+						<input type="text" name="answer" class="form-control" ></div>
 				</div>
-			</div>
-		</form>
+				<div class="form-group">
+					<label class="col-sm-3 control-label">*验证码：</label>
+					<div class="col-sm-2">
+						<input type="text" name="checkcode" class="form-control"></div>
+					<img src="libs/captcha.php" alt="" onclick="javascript:this.src='libs/captcha.php?time='+Math.random();"></div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-5">
+						<input type="submit" class="btn btn-default" name="retister" value="注册"></div>
+				</div>
+			</form>
+		</div>
 	</div>
-</div>
-<{include file='footer.html'}>
+	<{include file='footer.html'}>

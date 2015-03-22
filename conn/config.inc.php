@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	header("Content-Type:text/html;charset=utf-8");//设置全局编码
 	require_once "libs/Smarty.class.php"; //包含smarty类文件
 	require_once "libs/page.class.php"; //分页类
@@ -25,4 +26,25 @@
 		print_r($arr);
 		echo '</pre>';
 	}
+
+	function unhtml($arr){
+		foreach ($arr as $key => $value) {
+			$arr[$key]=trim(addslashes($value));
+		}
+		return $arr;
+	}
+
+	function GetIP(){
+	if (getenv("HTTP_CLIENT_IP") && strcasecmp(getenv("HTTP_CLIENT_IP"), "unknown"))
+		$ip = getenv("HTTP_CLIENT_IP");
+	else if (getenv("HTTP_X_FORWARDED_FOR") && strcasecmp(getenv("HTTP_X_FORWARDED_FOR"), "unknown"))
+		$ip = getenv("HTTP_X_FORWARDED_FOR");
+	else if (getenv("REMOTE_ADDR") && strcasecmp(getenv("REMOTE_ADDR"), "unknown"))
+		$ip = getenv("REMOTE_ADDR");
+	else if (isset($_SERVER['REMOTE_ADDR']) && $_SERVER['REMOTE_ADDR'] && strcasecmp($_SERVER['REMOTE_ADDR'], "unknown"))
+		$ip = $_SERVER['REMOTE_ADDR'];
+	else
+		$ip = "unknown";
+	return($ip);
+}
 ?>
