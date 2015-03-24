@@ -20,29 +20,25 @@
 	</div>
 	<div class="col-sm-8 col-md-8 column">
 		<div class="media">
+		<h3>编程辞典简介</h3>
 			 <a href="#" class="pull-left"><img id="ciimg" src="media/image/b1.gif" class="media-object" alt='' /></a>
 			<div class="media-body">
-				<h4 class="media-heading">
-					编程词典简介
-				</h4> <{$infobj.content}>
-				<span class="text-right"><{$infobj.createtime}></span>
+				<{$infobj.content}>
 			</div>
 		</div>
 		<div class="media">
-			 <a href="#" class="pull-left"><img src="skin/img/64.jpg" class="media-object" alt='' /></a>
+		<h3>编程辞典推荐</h3>
+		<{foreach from=$infonewbccds item=v key=k}>
 			<div class="media-body">
-				<h4 class="media-heading">
-					新标题
-				</h4> 这里是简介内容区域！
-				<div class="media">
-					 <a href="#" class="pull-left"><img src="skin/img/64.jpg" class="media-object" alt='' /></a>
-					<div class="media-body">
-						<h4 class="media-heading">
-							新标题
-						</h4> 这里是简介内容区域！
-					</div>
-				</div>
+			<a href="#" class="pull-left"><img height=170 width=140 src="<{$v.imageaddress}>" class="media-object" alt='' /></a>
+				<ul>	<li>名称：<{$v.bccdname}></li>
+
+				<li>所属版本：<{$v.bbname}></li>
+				<li>价格：<{$v.price}>元</li>
+				<li>版权：<{$v.owner}></li>
+				<li>添加时间：<{$v.addtime}></li></ul>
 			</div>
+			<{/foreach}>
 		</div>
 	</div>
 </div>
