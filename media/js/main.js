@@ -79,4 +79,11 @@ $(function() {
 			}
 		}
 	});
+
+	function change_img(){
+		var arr = ["b1.gif","b2.gif","b3.gif","b4.gif","b5.gif"];
+		var index = Math.floor((Math.random()*arr.length));
+		$("#ciimg").attr('src', 'media/image/'+arr[index]);
+	}
+	setInterval(change_img,5000);
 })

@@ -8,7 +8,12 @@ $sqluwz=mysqli_query($connect,"select * from tb_soft order by addtime desc limit
 while ($infouwz=mysqli_fetch_assoc($sqluwz)) {
 	$infouwzs[]=$infouwz;
 }
+
+$sqlbj=mysqli_query($connect,"select * from tb_bccdjj where mark=1");
+$infobj=mysqli_fetch_assoc($sqlbj);
+
 $smarty->assign('infouwzs',$infouwzs);
+$smarty->assign('infobj',$infobj);
 $smarty->assign('infos',$infos);
 $smarty->display('index.html');
 ?>
