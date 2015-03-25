@@ -1,0 +1,29 @@
+<{include file="header.html"}>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="breadcrumb">
+				<li>
+					<a href="index.php">首页</a>
+				</li>
+				<li class="active">
+					网站公告
+				</li>
+			</ul>
+			
+			<div class="articleContent">
+				<h2 class="title">
+					<{$info.title}>
+				</h2>
+
+				<div id="contentTxt">
+					<p>
+						<{$info.content}>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<{include file='footer.html'}>

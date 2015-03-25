@@ -5,7 +5,7 @@
 			<a href="" class="list-group-item active">网站公告</a>
 			<{foreach from=$infos key=k item=v}>
 			<div class="list-group-item">
-				<a href="<{$v.id}>"><{$v.title}></a>
+				<a href="tellinfo.php?id=<{$v.id}>"><{$v.title}></a>
 			</div>
 			<{/foreach}>			
 		</div>
@@ -13,7 +13,7 @@
 			 <a href="" class="list-group-item active">软件下载</a>
 			<{foreach from=$infouwzs key=k item=v}>
 			<div class="list-group-item">
-				<a href="<{$v.id}>"><{$v.softname}></a>
+				<a href="softinfo.php?id=<{$v.id}>"><{$v.softname}></a>
 			</div>
 			<{/foreach}>
 		</div>

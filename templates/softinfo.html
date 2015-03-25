@@ -1,0 +1,58 @@
+<{include file="header.html"}>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<ul class="breadcrumb">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li class="active">
+					公司简介
+				</li>
+			</ul>
+			<div class="row clearfix">
+				<div class="col-md-8 column">
+					<dl class="dl-horizontal">
+						<dt>
+							软件名称：
+						</dt>
+						<dd>
+							<{$infoxs.softname}>
+						</dd>
+						<dt>
+							添加时间：
+						</dt>
+						<dd>
+							<{$infoxs.addtime}>
+						</dd>
+						<dt>
+							下载次数：
+						</dt>
+						<dd>
+							<{$infoxs.click}>
+						</dd>
+						<dt>
+							立即下载：
+						</dt>
+						<dd>
+							<a href="downloadsoft.php?id=<{$infoxs.id}>"><img src="media/image/bg_14(5).jpg"/></a>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-4 column">
+					<div class="jumbotron">
+					<img class="img-rounded" alt="140x140" src="http://www.uades.com/tool/bootStrapLayoutit/skin/img/140.jpg" />
+						<p>
+							<{$infoxs.content}>
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<{include file='footer.html'}>
