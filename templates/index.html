@@ -44,63 +44,36 @@
 </div>
 <div class="row clearfix">
 	<div class="col-md-4 column">
+	<h3>常见问题</h3>
 		<img alt="140x140" src="http://www.uades.com/tool/bootStrapLayoutit/skin/img/140.jpg" class="pull-left" />
-		<ul class="pull-left">
+		<ul class="pull-left col-md-7">
+		<{foreach from=$infocjwts item=v key=k}>
 			<li>
-				标题一
+				<{$v.question}>
 			</li>
-			<li>
-				标题二
-			</li>
-			<li>
-				标题三
-			</li>
-			<li>
-				标题四
-			</li>
-			<li>
-				标题五
-			</li>
+			<{/foreach}>
 		</ul>
 	</div>
 	<div class="col-md-4 column">
+	<h3>社区论坛</h3>
 		<img alt="140x140" src="http://www.uades.com/tool/bootStrapLayoutit/skin/img/140.jpg" class="pull-left"/>
-		<ul class="pull-left">
+		<ul class="pull-left col-md-7">
+			<{foreach from=$infobbss item=v key=k}>
 			<li>
-				标题一
+				<{$v.title}>
 			</li>
-			<li>
-				标题二
-			</li>
-			<li>
-				标题三
-			</li>
-			<li>
-				标题四
-			</li>
-			<li>
-				标题五
-			</li>
+			<{/foreach}>
 		</ul>
 	</div>
 	<div class="col-md-4 column">
+	<h3>升级下载</h3>
 		<img alt="140x140" src="http://www.uades.com/tool/bootStrapLayoutit/skin/img/140.jpg" class="pull-left" />
-		<ul class="pull-left">
+		<ul class="pull-left col-md-7">
+			<{foreach from=$infosjxzs item=v key=k}>
 			<li>
-				标题一
+				<{$v.name}>
 			</li>
-			<li>
-				标题二
-			</li>
-			<li>
-				标题三
-			</li>
-			<li>
-				标题四
-			</li>
-			<li>
-				标题五
-			</li>
+			<{/foreach}>
 		</ul>
 	</div>
 </div>
